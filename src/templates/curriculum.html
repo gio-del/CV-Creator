@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ name }}'s CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 28px;
+            color: #333;
+        }
+        h2 {
+            font-size: 24px;
+            color: #444;
+            margin-top: 10px;
+        }
+        p {
+            font-size: 16px;
+            color: #666;
+            margin: 5px 0;
+        }
+        ul {
+            margin: 0;
+            padding: 0 0 0 20px;
+        }
+        li {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+
+
+        .icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>{{ name }}</h1>
+        <p>{{ address }}</p>
+        <p>Email: <a href="mailto:{{ email }}">{{ email }}</a></p>
+        <p>Phone: <a href="tel:{{ phone }}">{{ phone }}</a></p>
+        <p>
+            <a href="{{ github }}" target="_blank"><i class="fab fa-github-square icon"></i>GitHub</a>
+            <a href="{{ linkedin }}" target="_blank"><i class="fab fa-linkedin icon"></i>LinkedIn</a>
+        </p>
+    </header>
+
+        <section>
+        <h2>Summary</h2>
+        <p>{{ summary }}</p>
+    </section>
+
+    {% if education %}
+    <section>
+        <h2>Education</h2>
+        <ul>
+            {% for edu in education %}
+                <li>{{ edu.degree }} in {{ edu.field_of_study }} at {{ edu.institution }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+    {% endif %}
+
+    {% if experience %}
+    <section>
+        <h2>Experience</h2>
+        <ul>
+            {% for exp in experience %}
+                <li>
+                    <p>{{ exp.position }}</p>
+                    <p>{{ exp.company }} | {{ exp.location }} | {{ exp.start_date }} - {{ exp.end_date }}</p>
+                    <p>{{ exp.description }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+    {% endif %}
+
+    {% if projects %}
+    <section>
+        <h2>Projects</h2>
+        <ul>
+            {% for project in projects %}
+                <li>
+                    <p>{{ project.name }}</p>
+                    <p>{{ project.description }}</p>
+                    <p><a href="{{ project.url }}" target="_blank">{{ project.url }}</a></p>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+    {% endif %}
+
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            {% for skill in skills %}
+                <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+</body>
+</html>
