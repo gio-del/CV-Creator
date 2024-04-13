@@ -1,5 +1,9 @@
 # CV-Creator
 
+## Description
+
+This project is a simple CV generator that takes a JSON file as input and generates a PDF file with the CV.
+
 ## Usage
 
 Note: This project requires `wkhtmltopdf` to be installed on your system. You can download it from [here](https://wkhtmltopdf.org/downloads.html).
