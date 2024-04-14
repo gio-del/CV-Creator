@@ -6,7 +6,7 @@
   "linkedin": "https://www.linkedin.com/in/johndoefake",
   "github": "https://www.github.com/johndoefake",
   "personal_website": "https://www.johndoefake.com",
-  "summary": "Results-driven software engineer with experience in web development...",
+  "summary": "Results-driven software engineer with experience in web development and software engineering. Skilled in Python, JavaScript, and React. Strong problem-solving and communication skills. Passionate about creating efficient and user-friendly applications. Interested in new technologies and continuous learning. Available for new opportunities.",
   "education": [
     {
       "degree": "Bachelor of Science",
@@ -49,6 +49,30 @@
       "url": "https://www.github.com/johndoefake/projectb"
     }
   ],
+
+  "languages": [
+    {
+      "name": "English",
+      "proficiency": "Native"
+    },
+    {
+      "name": "Spanish",
+      "proficiency": "Intermediate"
+    }
+  ],
+    "certifications": [
+    {
+      "name": "Certification A",
+      "authority": "Organization A",
+      "date": "Jan 2019"
+    },
+    {
+      "name": "Certification B",
+      "authority": "Organization B",
+      "date": "Feb 2020",
+      "url": "https://www.example.com/certificationb"
+    }
+  ],
   "skills": [
     "Python",
     "JavaScript",
@@ -56,5 +80,6 @@
     "React",
     "Django",
     "SQL"
-  ]
+  ],
+  "authorization": "I authorize the processing of personal data contained in my CV based on art. 13 GDPR 679/16."
 }

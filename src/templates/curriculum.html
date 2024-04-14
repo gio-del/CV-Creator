@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>{{ name }}'s CV</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-    <!-- typebase.css from: http://devinhunt.github.io/typebase.css/demo/typebase.css -->
+    <!-- adapted from typebase.css: http://devinhunt.github.io/typebase.css/demo/typebase.css -->
     <style>
         body {
             font-family: Roboto, sans-serif;
@@ -13,6 +14,7 @@
 
         a {
             text-decoration: none;
+            color: #20349f;
         }
 
         /*! Typebase.less v0.1.0 | MIT License */
@@ -25,7 +27,7 @@
 
         /* Copy & Lists */
         p {
-            line-height: 1rem;
+            line-height: 1.5rem;
             margin-bottom: 0;
         }
 
@@ -66,6 +68,7 @@
             margin-top: 1.5rem;
             margin-bottom: 0;
             line-height: 1.5rem;
+            color: #2c446f;
         }
 
         h1 {
@@ -104,6 +107,16 @@
             aspect-ratio: 1;
             font-size: 1.5rem;
             margin-right: 5px;
+            margin-bottom: 2px;
+        }
+
+        section {
+            margin-top: 0;
+        }
+
+        li > p {
+            margin-bottom: 0;
+            line-height: 0.5rem;
         }
 
     </style>
@@ -113,7 +126,6 @@
     <h1>{{ name }}</h1>
     <p>{{ address }}</p>
 
-    <!-- Contact section, use just icons for phone, email, GitHub and LinkedIn -->
     <div class="contact">
         {% if phone %}
         <a href="tel:{{ phone }}"><i class="fas fa-phone icon"></i></a>
@@ -123,7 +135,7 @@
         <a href="{{ linkedin }}" target="_blank"><i class="fab fa-linkedin icon"></i></a>
     </div>
 
-    <p><a href="{{ personal_website }}" target="_blank"><i class="fas fa-external-link-alt"></i> {{ personal_website }}</a></p>
+    <p><a href="{{ personal_website }}" target="_blank">{{ personal_website }} <i class="fas fa-external-link-alt"></i></a></p>
 </header>
 
 <section>
@@ -163,9 +175,8 @@
     <ul>
         {% for project in projects %}
         <li>
-            <p>{{ project.name }}</p>
+            <p>{{ project.name }} <a href="{{ project.url }}" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
             <p>{{ project.description }}</p>
-            <p><a href="{{ project.url }}" target="_blank">{{ project.url }}</a></p>
         </li>
         {% endfor %}
     </ul>
@@ -173,6 +184,29 @@
 </section>
 {% endif %}
 
+{% if languages %}
+<section>
+    <h2>Languages</h2>
+    <ul>
+        {% for language in languages %}
+        <li>{{ language.name }} - {{ language.proficiency }}</li>
+        {% endfor %}
+    </ul>
+</section>
+{% endif %}
+
+{% if certifications %}
+<section>
+    <h2>Certifications</h2>
+    <ul>
+        {% for cert in certifications %}
+        <li>{{ cert.name }} - {{ cert.authority }} | {{ cert.date }}{% if cert.url %} <a href="{{ cert.url }}" target="_blank"><i class="fas fa-external-link-alt"></i></a>{% endif %}</li>
+        {% endfor %}
+    </ul>
+</section>
+{% endif %}
+
+{% if skills %}
 <section>
     <h2>Skills</h2>
     <ul>
@@ -181,5 +215,14 @@
         {% endfor %}
     </ul>
 </section>
+{% endif %}
+
+{% if authorization %}
+<section>
+    <p style="text-align: center; font-size: 1rem; font-style: italic;">{{ authorization }}</p>
+</section>
+{% endif %}
+
+
 </body>
 </html>
