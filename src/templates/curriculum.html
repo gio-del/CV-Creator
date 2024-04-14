@@ -98,7 +98,7 @@
             font-size: 0.75rem;
         }
 
-        .contact{
+        .contact {
             margin-top: 1rem;
         }
 
@@ -135,7 +135,8 @@
         <a href="{{ linkedin }}" target="_blank"><i class="fab fa-linkedin icon"></i></a>
     </div>
 
-    <p><a href="{{ personal_website }}" target="_blank">{{ personal_website }} <i class="fas fa-external-link-alt"></i></a></p>
+    <p><a href="{{ personal_website }}" target="_blank">{{ personal_website }} <i class="fas fa-external-link-alt"></i></a>
+    </p>
 </header>
 
 <section>
@@ -175,7 +176,8 @@
     <ul>
         {% for project in projects %}
         <li>
-            <p>{{ project.name }} <a href="{{ project.url }}" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
+            <p>{{ project.name }} <a href="{{ project.url }}" target="_blank"><i
+                    class="fas fa-external-link-alt"></i></a></p>
             <p>{{ project.description }}</p>
         </li>
         {% endfor %}
@@ -200,7 +202,10 @@
     <h2>Certifications</h2>
     <ul>
         {% for cert in certifications %}
-        <li>{{ cert.name }} - {{ cert.authority }} | {{ cert.date }}{% if cert.url %} <a href="{{ cert.url }}" target="_blank"><i class="fas fa-external-link-alt"></i></a>{% endif %}</li>
+        <li>{{ cert.name }} - {{ cert.authority }} | {{ cert.date }}{% if cert.url %} <a href="{{ cert.url }}"
+                                                                                         target="_blank"><i
+                class="fas fa-external-link-alt"></i></a>{% endif %}
+        </li>
         {% endfor %}
     </ul>
 </section>

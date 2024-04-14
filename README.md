@@ -8,7 +8,8 @@ This project is a simple CV generator that takes a JSON file as input and genera
 
 Update the `src/data/curriculum.json` file with your personal information and run the following commands:
 
-Note: This project requires `wkhtmltopdf` to be installed on your system. You can download it from [here](https://wkhtmltopdf.org/downloads.html).
+Note: This project requires `wkhtmltopdf` to be installed on your system. You can download it
+from [here](https://wkhtmltopdf.org/downloads.html).
 
 ### With Poetry
 
