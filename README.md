@@ -15,7 +15,9 @@ from [here](https://wkhtmltopdf.org/downloads.html).
 
 ```bash
 poetry install
-poetry run python src/generate_curriculum.py
+poetry shell
+cd src
+python generate_curriculum.py
 ```
 
 The generated CV will be saved in the `src/output/cv.pdf` file.
