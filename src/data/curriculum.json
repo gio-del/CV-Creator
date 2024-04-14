@@ -11,12 +11,18 @@
     {
       "degree": "Bachelor of Science",
       "field_of_study": "Computer Science",
-      "institution": "University A"
+      "institution": "University A",
+      "start_date": "Sep 2015",
+      "end_date": "Jul 2018",
+      "note": "GPA: 3.8/4.0, Final Grade: 110/110 cum laude"
     },
     {
       "degree": "Master of Science",
       "field_of_study": "Software Engineering",
-      "institution": "University B"
+      "institution": "University B",
+      "start_date": "Sep 2018",
+      "end_date": "Present",
+      "note": "GPA: 4.0/4.0, Expected Graduation: Jul 2021"
     }
   ],
   "experience": [

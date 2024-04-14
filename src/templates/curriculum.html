@@ -149,7 +149,11 @@
     <h2>Education</h2>
     <ul>
         {% for edu in education %}
-        <li>{{ edu.degree }} in {{ edu.field_of_study }} at {{ edu.institution }}</li>
+        <li>
+            <p>{{ edu.degree }} in {{ edu.field_of_study }} at {{ edu.institution }}</p>
+            <p>{{edu.start_date}} - {{edu.end_date}}</p>
+            <p>{{edu.note}}</p>
+        </li>
         {% endfor %}
     </ul>
 </section>
