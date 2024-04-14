@@ -125,6 +125,13 @@
         .skills ul li {
             margin-right: 10px;
         }
+
+        /* insert points between skills */
+        .skills ul li:not(:last-child):after {
+            content: "•";
+            margin-left: 10px;
+            color: #20349f;
+        }
     </style>
 </head>
 <body>
