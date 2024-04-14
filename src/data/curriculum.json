@@ -1,0 +1,85 @@
+{
+  "name": "John Doe",
+  "address": "123 Main St, City, Country",
+  "email": "johndoe@example.com",
+  "phone": "+1234567890",
+  "linkedin": "https://www.linkedin.com/in/johndoefake",
+  "github": "https://www.github.com/johndoefake",
+  "personal_website": "https://www.johndoefake.com",
+  "summary": "Results-driven software engineer with experience in web development and software engineering. Skilled in Python, JavaScript, and React. Strong problem-solving and communication skills. Passionate about creating efficient and user-friendly applications. Interested in new technologies and continuous learning. Available for new opportunities.",
+  "education": [
+    {
+      "degree": "Bachelor of Science",
+      "field_of_study": "Computer Science",
+      "institution": "University A"
+    },
+    {
+      "degree": "Master of Science",
+      "field_of_study": "Software Engineering",
+      "institution": "University B"
+    }
+  ],
+  "experience": [
+    {
+      "position": "Software Engineer",
+      "company": "Company X",
+      "location": "City X",
+      "start_date": "Jan 2018",
+      "end_date": "Present",
+      "description": "Developed and maintained web applications..."
+    },
+    {
+      "position": "Web Developer",
+      "company": "Company Y",
+      "location": "City Y",
+      "start_date": "Jun 2015",
+      "end_date": "Dec 2017",
+      "description": "Designed and implemented responsive user interfaces..."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Project A",
+      "description": "Developed a web application using React and Django...",
+      "url": "https://www.github.com/johndoefake/projecta"
+    },
+    {
+      "name": "Project B",
+      "description": "Built a RESTful API with Node.js and Express...",
+      "url": "https://www.github.com/johndoefake/projectb"
+    }
+  ],
+
+  "languages": [
+    {
+      "name": "English",
+      "proficiency": "Native"
+    },
+    {
+      "name": "Spanish",
+      "proficiency": "Intermediate"
+    }
+  ],
+    "certifications": [
+    {
+      "name": "Certification A",
+      "authority": "Organization A",
+      "date": "Jan 2019"
+    },
+    {
+      "name": "Certification B",
+      "authority": "Organization B",
+      "date": "Feb 2020",
+      "url": "https://www.example.com/certificationb"
+    }
+  ],
+  "skills": [
+    "Python",
+    "JavaScript",
+    "HTML/CSS",
+    "React",
+    "Django",
+    "SQL"
+  ],
+  "authorization": "I authorize the processing of personal data contained in my CV based on art. 13 GDPR 679/16."
+}

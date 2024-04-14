@@ -1,5 +1,4 @@
 [tool.poetry]
-name = "pythonproject"
 version = "0.1.0"
 description = ""
 authors = ["gio-del <giovanni.delucia@polimi.it>"]
